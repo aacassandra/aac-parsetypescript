@@ -1,4 +1,4 @@
-<img src="https://img.shields.io/badge/aac--parsetypescript-v.19.4.8-informational.svg" alt="aac-parsetypescript version"> <img src="https://img.shields.io/badge/base-httpclient-orange.svg"> <img src="https://img.shields.io/badge/build-crud-brightgreen.svg"> <img src="https://img.shields.io/badge/install%20size-388%20kB-lightgray.svg">
+<img src="https://img.shields.io/badge/aac--parsetypescript-v.19.4.81-informational.svg" alt="aac-parsetypescript version"> <img src="https://img.shields.io/badge/base-httpclient-orange.svg"> <img src="https://img.shields.io/badge/build-crud-brightgreen.svg"> <img src="https://img.shields.io/badge/install%20size-388%20kB-lightgray.svg">
 <br><br>
 # Introduction
 This package makes it to easy for typescript users for access the parse database via http
