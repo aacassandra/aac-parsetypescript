@@ -1,4 +1,4 @@
-<img src="https://img.shields.io/badge/%40aac--parsetypescript-v.19.4.7-orange.svg" alt="@aac-parsetypescript version"> <img src="https://img.shields.io/badge/base-httpclient-yellow.svg"> <img src="https://img.shields.io/badge/install%20size-388%20kB-brightgreen.svg"> <img src="https://img.shields.io/badge/build-crud-lightgray.svg">
+<img src="https://img.shields.io/badge/aac--parsetypescript-v.19.4.8-informational.svg" alt="aac-parsetypescript version"> <img src="https://img.shields.io/badge/base-httpclient-orange.svg"> <img src="https://img.shields.io/badge/build-crud-brightgreen.svg"> <img src="https://img.shields.io/badge/install%20size-388%20kB-lightgray.svg">
 <br><br>
 # Introduction
 This package makes it to easy for typescript users for access the parse database via http
@@ -12,12 +12,12 @@ Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | 11 ✔ |
 [![Browser Matrix](https://saucelabs.com/open_sauce/build_matrix/axios.svg)](https://saucelabs.com/u/axios)
 
 ## Installing
-```npm install @aac-parsetypescript```
+```npm install aac-parsetypescript```
 
 ## Implement
 add this code in app.module.ts:
 ```
-import { ParseTypescript } from "@aac-parsetypescript";
+import { ParseTypescript } from "aac-parsetypescript";
 ```
 add to providers
 ```
@@ -28,7 +28,7 @@ providers: [
 ```
 add to components or services
 ```
-import { ParseTypescript } from "@aac-parsetypescript";
+import { ParseTypescript } from "aac-parsetypescript";
 ```
 add to constructor
 ```
