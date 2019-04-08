@@ -60,8 +60,8 @@ getSignin(){
     appId: "CHANGE-WITH-YOUR-APP-ID",
     restApiKey: "CHANGE-WITH-YOUR-REST-API-KEY"
   };
-  let parse = await this.parseTypescript.getSignin(signin, opt);
-  if(parse.data.success == true){
+  let parse:any = await this.parseTypescript.getSignin(config);
+  if(parse.success == true){
     //handle success
   }else{
     //handle error
@@ -82,8 +82,8 @@ getSignup(){
     appId: "CHANGE-WITH-YOUR-APP-ID",
     restApiKey: "CHANGE-WITH-YOUR-REST-API-KEY"
   };
-  let parse = await this.parseTypescript.getSignup(config);
-  if(parse.data.success == true){
+  let parse:any = await this.parseTypescript.getSignup(config);
+  if(parse.success == true){
     //handle success
   }else{
     //handle error
@@ -103,8 +103,8 @@ getCreate(){
     appId: "CHANGE-WITH-YOUR-APP-ID",
     restApiKey: "CHANGE-WITH-YOUR-REST-API-KEY"
   };
-  let parse = await this.parseTypescript.getCreate(config);
-  if(parse.data.success == true){
+  let parse:any = await this.parseTypescript.getCreate(config);
+  if(parse.success == true){
     //handle success
   }else{
     //handle error
@@ -122,8 +122,8 @@ getReading(){
     appId: "CHANGE-WITH-YOUR-APP-ID",
     restApiKey: "CHANGE-WITH-YOUR-REST-API-KEY"
   };
-  let parse = await this.parseTypescript.getReading(config);
-  if(parse.data.success == true){
+  let parse:any = await this.parseTypescript.getReading(config);
+  if(parse.success == true){
     //handle success
   }else{
     //handle error
@@ -144,8 +144,8 @@ getUpdate(){
     appId: "CHANGE-WITH-YOUR-APP-ID",
     restApiKey: "CHANGE-WITH-YOUR-REST-API-KEY"
   };
-  let parse = await this.parseTypescript.getUpdate(config);
-  if(parse.data.success == true){
+  let parse:any = await this.parseTypescript.getUpdate(config);
+  if(parse.success == true){
     //handle success
   }else{
     //handle error
@@ -163,8 +163,8 @@ getDelete(){
     appId: "CHANGE-WITH-YOUR-APP-ID",
     restApiKey: "CHANGE-WITH-YOUR-REST-API-KEY"
   };
-  let parse = await this.parseTypescript.getDelete(config);
-  if(parse.data.success == true){
+  let parse:any = await this.parseTypescript.getDelete(config);
+  if(parse.success == true){
     //handle success
   }else{
     //handle error
