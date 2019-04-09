@@ -1,6 +1,6 @@
 {
   "name": "aac-parsetypescript",
-  "version": "19.4.91",
+  "version": "19.4.92",
   "description": "This package makes it to easy for typescript users for access the parse database via http",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
