@@ -10,26 +10,6 @@ import { UsersModele } from "./users.modele";
 export class ParseTypescript {
   constructor() {}
 
-  async httpRespons(options: any) {
-    return new Promise((resolve, reject) => {
-      axios(options)
-        .then(function(response) {
-          let res = {
-            success: true,
-            res: response
-          };
-          resolve(res);
-        })
-        .catch(function(error) {
-          let res = {
-            success: false,
-            res: error
-          };
-          resolve(res);
-        });
-    });
-  }
-
   async getSignin(config: SigninModele) {
     const options = {
       method: "GET",
@@ -47,7 +27,7 @@ export class ParseTypescript {
       }
     };
 
-    let res = await this.httpRespons(options);
+    let res = await axios(options);
     return res;
   }
 
@@ -64,7 +44,7 @@ export class ParseTypescript {
       }
     };
 
-    let res = await this.httpRespons(options);
+    let res = await axios(options);
     return res;
   }
 
@@ -78,7 +58,7 @@ export class ParseTypescript {
       }
     };
 
-    let res = await this.httpRespons(options);
+    let res = await axios(options);
     return res;
   }
 
@@ -95,7 +75,7 @@ export class ParseTypescript {
       }
     };
 
-    let res = await this.httpRespons(options);
+    let res = await axios(options);
     return res;
   }
 
@@ -111,7 +91,7 @@ export class ParseTypescript {
       }
     };
 
-    let res = await this.httpRespons(options);
+    let res = await axios(options);
     return res;
   }
 
@@ -127,7 +107,7 @@ export class ParseTypescript {
       }
     };
 
-    let res = await this.httpRespons(options);
+    let res = await axios(options);
     return res;
   }
 
@@ -141,7 +121,7 @@ export class ParseTypescript {
       }
     };
 
-    let res = await this.httpRespons(options);
+    let res = await axios(options);
     return res;
   }
 }

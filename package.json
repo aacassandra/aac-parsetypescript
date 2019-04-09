@@ -1,18 +1,20 @@
 {
   "name": "aac-parsetypescript",
-  "version": "19.4.81",
+  "version": "19.4.91",
   "description": "This package makes it to easy for typescript users for access the parse database via http",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
-    "build": "tsc"
+    "build": "tsc",
+    "rebuild": "rm -rf lib && tsc",
+    "production": "rm -rf lib && tsc && npm publish"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aacassandra/aac-parsetypescript.git"
   },
-  "keywords": [],
+  "keywords": ["parse-typescript", "parse-angular", "parse-http", "quickparse", "quick-parse", "quick-http"],
   "author": "",
   "license": "ISC",
   "bugs": {

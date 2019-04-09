@@ -1,4 +1,4 @@
-<img src="https://img.shields.io/badge/aac--parsetypescript-v.19.4.81-informational.svg" alt="aac-parsetypescript version"> <img src="https://img.shields.io/badge/base-httpclient-orange.svg"> <img src="https://img.shields.io/badge/build-crud-brightgreen.svg"> <img src="https://img.shields.io/badge/install%20size-388%20kB-lightgray.svg">
+<img src="https://img.shields.io/badge/aac--parsetypescript-v.19.4.9-red.svg?style=flat&logo=npm" alt="aac-parsetypescript version"> <img src="https://img.shields.io/badge/base-httpclient-orange.svg"> <img src="https://img.shields.io/badge/build-crud-brightgreen.svg"> <img src="https://img.shields.io/badge/install%20size-388%20kB-lightgray.svg">
 <br><br>
 # Introduction
 This package makes it to easy for typescript users for access the parse database via http
@@ -50,7 +50,7 @@ private parseTypescript:parseTypescript
 ## Example
 Performing a <b>signin</b> request
 ```
-getSignin(){
+async getSignin(){
   let config = {
     bashurl: "https://parseapi.example.com",
     data: {
@@ -60,18 +60,21 @@ getSignin(){
     appId: "CHANGE-WITH-YOUR-APP-ID",
     restApiKey: "CHANGE-WITH-YOUR-REST-API-KEY"
   };
-  let parse:any = await this.parseTypescript.getSignin(config);
-  if(parse.success == true){
-    //handle success
-  }else{
-    //handle error
-  }
+  await this.parseTypescript.getSignin(config)
+  .then(function (response) {
+    // handle success
+    console.log(response);
+  })
+  .catch(function (error) {
+    // handle error
+    console.log(error);
+  })
 }
 ```
 
 Performing a <b>signup</b> request
 ```
-getSignup(){
+async getSignup(){
   let config = {
     bashurl: "https://parseapi.example.com",
     data: {
@@ -82,18 +85,21 @@ getSignup(){
     appId: "CHANGE-WITH-YOUR-APP-ID",
     restApiKey: "CHANGE-WITH-YOUR-REST-API-KEY"
   };
-  let parse:any = await this.parseTypescript.getSignup(config);
-  if(parse.success == true){
-    //handle success
-  }else{
-    //handle error
-  }
+  await this.parseTypescript.getSignup(config)
+  .then(function (response) {
+    // handle success
+    console.log(response);
+  })
+  .catch(function (error) {
+    // handle error
+    console.log(error);
+  })
 }
 ```
 
 Perfoming a <b>create</b> request
 ```
-getCreate(){
+async getCreate(){
   let config = {
     bashurl: "https://parseapi.example.com",
     data: {
@@ -103,37 +109,44 @@ getCreate(){
     appId: "CHANGE-WITH-YOUR-APP-ID",
     restApiKey: "CHANGE-WITH-YOUR-REST-API-KEY"
   };
-  let parse:any = await this.parseTypescript.getCreate(config);
-  if(parse.success == true){
-    //handle success
-  }else{
-    //handle error
-  }
+  await this.parseTypescript.getCreate(config)
+  .then(function (response) {
+    // handle success
+    console.log(response);
+  })
+  .catch(function (error) {
+    // handle error
+    console.log(error);
+  })
 }
 ```
 
-Perfoming a <b>reading</b> request
+Perfoming a <b>reading</b> request<br>
+[Readmore](https://docs.parseplatform.org/rest/guide/) about conditional on parse
 ```
-getReading(){
+async getReading(){
   let config = {
     bashurl: "https://parseapi.example.com",
-    where: "CHANGE-WITH-YOUR-CONDITIONS",
+    where: '"idExample"="1","nameExample"="Jhon Taruban"',
     class: "CHANGE-WITH-YOUR-CLASS-TARGET",
     appId: "CHANGE-WITH-YOUR-APP-ID",
     restApiKey: "CHANGE-WITH-YOUR-REST-API-KEY"
   };
-  let parse:any = await this.parseTypescript.getReading(config);
-  if(parse.success == true){
-    //handle success
-  }else{
-    //handle error
-  }
+  await this.parseTypescript.getReading(config)
+  .then(function (response) {
+    // handle success
+    console.log(response);
+  })
+  .catch(function (error) {
+    // handle error
+    console.log(error);
+  })
 }
 ```
 
 Perfoming a <b>update</b> request
 ```
-getUpdate(){
+async getUpdate(){
   let config = {
     bashurl: "https://parseapi.example.com",
     class: "CHANGE-WITH-YOUR-CLASS-TARGET",
@@ -144,18 +157,21 @@ getUpdate(){
     appId: "CHANGE-WITH-YOUR-APP-ID",
     restApiKey: "CHANGE-WITH-YOUR-REST-API-KEY"
   };
-  let parse:any = await this.parseTypescript.getUpdate(config);
-  if(parse.success == true){
-    //handle success
-  }else{
-    //handle error
-  }
+  await this.parseTypescript.getUpdate(config)
+  .then(function (response) {
+    // handle success
+    console.log(response);
+  })
+  .catch(function (error) {
+    // handle error
+    console.log(error);
+  })
 }
 ```
 
 Perfoming a <b>delete</b> request
 ```
-getDelete(){
+async getDelete(){
   let config = {
     bashurl: "https://parseapi.example.com",
     class: "CHANGE-WITH-YOUR-CLASS-TARGET",
@@ -163,12 +179,15 @@ getDelete(){
     appId: "CHANGE-WITH-YOUR-APP-ID",
     restApiKey: "CHANGE-WITH-YOUR-REST-API-KEY"
   };
-  let parse:any = await this.parseTypescript.getDelete(config);
-  if(parse.success == true){
-    //handle success
-  }else{
-    //handle error
-  }
+  await this.parseTypescript.getDelete(config)
+  .then(function (response) {
+    // handle success
+    console.log(response);
+  })
+  .catch(function (error) {
+    // handle error
+    console.log(error);
+  })
 }
 ```
 
@@ -176,4 +195,4 @@ getDelete(){
 aac-parsetypescript is based on [axios](https://github.com/axios/axios) source code and is combined with rules that must be met to access the parse model database. With the final results, it aims as a tool to accelerate the coding process of programmers.
 
 ## LICENSE
-MIT
+[MIT](https://github.com/aacassandra/aac-parsetypescript/blob/master/LICENSE)
