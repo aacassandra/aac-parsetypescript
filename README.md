@@ -191,6 +191,35 @@ async getDelete(){
 }
 ```
 
+## NOTES
+If you want use (this.) function on (.then) or (.catch)
+```
+constructor(
+  private example:Example
+){}
+
+async getDelete(){
+let self = this;
+  let config = {
+    bashurl: "https://parseapi.example.com",
+    class: "CHANGE-WITH-YOUR-CLASS-TARGET",
+    id: "CHANGE-WITH-YOUR-OBJECTID-TARGET",
+    appId: "CHANGE-WITH-YOUR-APP-ID",
+    restApiKey: "CHANGE-WITH-YOUR-REST-API-KEY"
+  };
+  await this.parseTypescript.getDelete(config)
+  .then(function (response) {
+    // handle success
+    console.log(response);
+    self.example;
+  })
+  .catch(function (error) {
+    // handle error
+    console.log(error);
+    self.example;
+  })
+}
+```
 ## CREDITS
 aac-parsetypescript is based on [axios](https://github.com/axios/axios) source code and is combined with rules that must be met to access the parse model database. With the final results, it aims as a tool to accelerate the coding process of programmers.
 
